@@ -23,10 +23,11 @@
         $radio1 = $_POST["radio1"];
         echo "<strong>La nota elegida es: </strong>$radio1<br />";
         $checkbox1 = $_POST["checkbox1"];
-        echo "<strong>Tus asignaturas preferidas son: </strong>";
+        echo "<strong>Tus asignaturas preferidas son: </strong><br />";
         for ($i = 0; $i < count($checkbox1); $i++) {
             echo "$checkbox1[$i].<br />";
         }
+        echo "<hr>";
         ?>
     </body> 
 </html>

@@ -11,6 +11,7 @@ and open the template in the editor.
     </head>
     <body>
         <h1><a href="formulario.xhtml">Ir a Formulario.</a></h1>
+        <h1><a href="funciones.php">Ir a Funciones.</a></h1>
         <?php
         // put your code here
         ?>
