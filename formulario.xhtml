@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Ejercicio Formulario</title>
+        <meta name="viewport" content="width=device-width"/>
+    </head>
+    <body>
+        <h1>Ejercicio formulario en PHP</h1>
+        <table border="5">
+            <form action="recogida.php" method="post" enctype="multipart/form-data">
+                <tr>
+                    <td>
+                        DNI: 
+                    </td>
+                    <td>
+                        <input type = "text" name = "dni" size="16"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nombre: 
+                    </td>
+                    <td>
+                        <input type = "text" name = "nombre" size="16"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Apellido: 
+                    </td>
+                    <td>
+                        <input type = "text" name = "apellido" size="16"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Dirección: 
+                    </td>
+                    <td>
+                        <input type = "text" name = "direccion" size="16"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        E-mail: 
+                    </td>
+                    <td>
+                        <input type = "text" name = "email" size="16"/>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        Contraseña: 
+                    </td>
+                    <td>
+                        <input type = "password" name = "password" size="16"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        ¿Qué nota piensas sacar?
+                    </td>
+                    <td>
+                        <input type = "radio" name = "radio1" value = "Excelente" />Excelente<br />
+                        <input type = "radio" name = "radio1" value = "Notable" />Notable<br />
+                        <input type = "radio" name = "radio1" value = "Aprobado" />Aprobado<br />
+                        <input type = "radio" name = "radio1" value = "Suspendido" />Suspendido<br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Marca las Asignaturas que más te gustan este año:
+                    </td>
+
+                    <td>
+                        <input type="checkbox" value="Despliegue de aplicaciones Web" name="checkbox1[]" />Despliegue de aplicaciones Web<br />
+                        <input type="checkbox" value="Diseño de Interfaces Web" name="checkbox1[]" />Diseño de Interfaces Web<br />
+                        <input type="checkbox" value="Desarrollo Web en Entorno Servidor" name="checkbox1[]" />Desarrollo Web en Entorno Servidor<br />
+                        <input type="checkbox" value="Desarrollo Web en Entorno Cliente" name="checkbox1[]" />Desarrollo Web en Entorno Cliente<br />
+                        <input type="checkbox" value="Empresa e Iniciativa Emprendedora" name="checkbox1[]" />Empresa e Iniciativa Emprendedora<br />
+                        <input type="checkbox" value="Lengua Extranjera" name="checkbox1[]" />Lengua Extranjera<br />
+                    </td>
+                </tr>
+                <input type = "submit" value = "Enviar" />
+            </form>
+        </table>
+    </body>
+</html>
