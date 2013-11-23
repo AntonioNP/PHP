@@ -1,0 +1,26 @@
+body{    
+    alignment-baseline: central;
+    padding: 5px;
+    }
+#pie a,h2{
+    text-decoration: none;
+    color: gray;
+}
+#izq{
+    margin: 1px;
+    text-align: center;
+    border: solid darkgrey 1px;
+    padding: 5px;
+    height: 90px;
+    width: 48.5%;
+    float: left;
+}
+#der{
+    margin: 1px;
+    text-align: center;
+    border: solid darkgrey 1px;
+    padding: 5px;
+    height: 90px;
+    width: 48.5%;
+    float: left;
+}

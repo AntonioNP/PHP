@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
         <title>ANP</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"/>
+        <link href="miCSS.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <?php
@@ -91,10 +93,11 @@
                 echo "A esta función se le deben pasan dos números<br>";
                 return;
             }
-            if ($x >= $y)
+            if ($x >= $y) {
                 echo $x;
-            else
+            } else {
                 echo $y;
+            }
         }
 
         $a = 1;
@@ -117,9 +120,9 @@
         echo"<br>";
 
         function invertir($str) {
-            if (strlen($str) == 0)
+            if (strlen($str) == 0) {
                 return "";
-            else
+            } else
                 return invertir(substr($str, 1)) . substr($str, 0, 1);
         }
 
@@ -127,5 +130,13 @@
         echo"<br>";
         echo"<br>";
         ?>
+        <div id="pie">
+            <div id="izq">
+                <h2><a href="index.php"><img src="img/volver.png" />Volver al menú principal</a></h2>
+            </div>
+            <div id="der">
+                <h2><img src="img/iconPerson.png" />Antonio Navarro Peris</h2>
+            </div>
+        </div>
     </body> 
 </html>
