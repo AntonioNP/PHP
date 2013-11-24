@@ -45,10 +45,10 @@
         echo "EJERCICIO 2:<br>";
         $pizza = "piece1 piece2 piece3 piece4 piece5 piece6";
         $pieces = explode(" ", $pizza);
-        for ($x = 0; $x < count($pieces); $x++)
+        for ($x = 0; $x < count($pieces); $x++) {
             echo $pieces[$x] . "<br/>";
+        }
         echo "<hr>";
-
 
         /* Ejercicio3: Uso de Explode
           $str = 'one|two|three|four'; // positive limit

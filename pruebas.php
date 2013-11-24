@@ -7,23 +7,101 @@
     </head>
     <body>
         <?php
-        $pizza = "piece1 piece2 piece3 piece4 piece5 piece6";
-        $pieces = explode(" ", $pizza);
-        echo $pieces[0];
-        echo $pieces[1];
+
+        function fn() {
+            echo "Punto 1 dentro de la función, \$var = " . $var . "<br>";
+            $var = "contenido2";
+            echo "Punto 2 dentro de la función, \$var = " . $var . "<br>";
+        }
+
+        $var = "contenido1";
+        fn();
+        echo "Fuera de la función, \$var = " . $var . "<br>";
+        echo"<br>";
+        echo"<hr>";
+        echo "EJEMPLO 2 DE ÁMBITO DE VARIABLES:";
+        echo"<br>";
+
+        function fn2() {
+            global $var2;
+            echo "punto 1 dentro de la función, \$var2 = " . $var2;
+            echo"<br/>";
+            $var2 = "contenido2";
+            echo "punto 2 dentro de la función, \$var2 = " . $var2;
+            echo"<br/>";
+        }
+
+        $var2 = "contenido1";
+        fn2();
+        echo "fuera de la función, \$var2 = " . $var2 . "<br>";
         echo "<hr>";
-        $cadena1 = "Esto es una cadena de texto ";
-        $cadena2 = "Esta es una segunda cadena de texto";
-        $cadena3 = 127;
-        $cadena4 = 257.89;
-        $union1 = $cadena1 . $cadena2;
-        $union2 = $cadena1 . $cadena3;
-        $union3 = $cadena3 . $cadena4;
-        echo $union1, "<br>";
-        echo $union2, "<br>";
-        echo $union3, "<br>";
-        $cadena3 .=" Este es el texto que se añadirá a la variable cadena3";
-        echo $cadena3, "<br>";
+        echo "Paso de Parámetros1:";
+
+        function create_table($data) {
+            echo "<table border = 1>";
+            reset($data);
+            $value = current($data);
+            while ($value) {
+                echo "<tr><td>$value</td></tr>\n";
+                $value = next($data);
+            }
+            echo "</table>";
+        }
+
+        $mi_array = array("Linea uno", "Linea dos", "Linea tres");
+        create_table($mi_array);
+        echo"<br>";
+        echo"<hr>";
+
+        function create_table2($data, $border = 1) {
+            echo "<table border = $border>";
+            reset($data);
+            $value = current($data);
+            while ($value) {
+                echo "<tr><td>$value</td></tr>\n";
+                $value = next($data);
+            }
+            echo "</table>";
+        }
+
+        $mi_array = array("Linea uno", "Linea dos", "Linea tres");
+        create_table2($mi_array);
+        echo"<br>";
+        echo"<br>";
+        create_table2($mi_array, 4);
+        echo"<br>";
+        echo"<hr>";
+        echo "Paso de Parámetros por Valor: ";
+
+        function incremento($valor, $cantidad = 1) {
+            $valor += $cantidad;
+        }
+
+        $numero = 10;
+        incremento($numero, 1);
+        echo($numero);
+        echo"<br>";
+        echo"<hr>";
+        echo "Paso de Parámetros por Referencia: ";
+
+        function incremento2(&$valor, $cantidad = 1) {
+            $valor += $cantidad;
+        }
+
+        $numero = 10;
+        incremento2($numero, 1);
+        echo($numero);
+        echo"<br>";
+        echo"<hr>";
+
+        function showtitles() {
+            for ($i = 0; $i < func_num_args(); $i++)
+                echo (func_get_arg($i) . "<br/>\n");
+        }
+
+        showtitles('Titulo1');
+        showtitles('Titulo1', 'Titulo2');
+        showtitles('Titulo1', 'Titulo2', 'Titulo3');
         ?>
         <div id="pie">
             <div id="izq">
