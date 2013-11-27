@@ -12,6 +12,7 @@ and open the template in the editor.
     <body>
         <h1><a href="formulario.xhtml">Ir a Formulario.</a></h1>
         <h1><a href="funciones.php">Ir a Funciones.</a></h1>
+        <h1><a href="arrays.php">Ir a Arrays.</a></h1>
         <?php
         // put your code here
         ?>
