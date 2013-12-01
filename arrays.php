@@ -11,7 +11,7 @@
         <?php
         $arr = array("Mamifero" => "Ballena", "Insecto" => "Hormiga");
         reset($arr);
-        while (list($indice, $contenido) = each($arr))
+        while (list($indice) = each($arr))
             echo "Indice: $indice.<br />";
         echo "<hr>";
         ?>
