@@ -17,6 +17,8 @@ and open the template in the editor.
         <li><h3><a href="formulario.xhtml">Ir a Formulario.</a></h3></li>
         <li><h3><a href="funciones.php">Ir a Funciones.</a></h3></li>
         <li><h3><a href="EjercicioCadenas.php">Ir a Ejercicio Cadenas.</a></h3></li>
+        <li><h3><a href="arrays.php">Ir a Ejercicio Arrays.</a></h3></li>
+        <li><h3><a href="apuntes.php">Ir a Apuntes.</a></h3></li>
         <!-- <li><h3><a href="pruebas.php">Ir a Pruebas.</a></h3></li> -->
 
     </lu>
