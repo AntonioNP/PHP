@@ -100,8 +100,47 @@
         }
 
         showtitles('Titulo1');
-        showtitles('Titulo1', 'Titulo2');
-        showtitles('Titulo1', 'Titulo2', 'Titulo3');
+        showtitles('Titulo1a', 'Titulo2a');
+        showtitles('Titulo1b', 'Titulo2b', 'Titulo3b');
+        echo"<hr>";
+        echo"<hr>";
+
+        function test_return() {
+            echo "Esta línea será ejecutada<br>";
+            return;
+            echo "Esta línea nunca será ejecutada<br>";
+        }
+        echo test_return();
+//Llamar a la function anterior.
+        function mayor($x, $y) {
+            if (!isset($x) || !isset($y)) {
+                echo "A esta función se le deben pasan dos números<br>";
+                return;
+            }
+            if ($x >= $y)
+                echo $x;
+            else
+                echo $y;
+        }
+
+        $a = 1;
+        $b = 2.5;
+        $c = 1.9;
+        echo "El valor de a es: " . $a;
+        echo"<br>";
+        echo "El valor de b es: " . $b;
+        echo"<br>";
+        echo "El valor de c es: " . $c;
+        echo"<br>";
+        echo mayor($a, $b) . " es el mayor de a y b";
+        echo"<br>";
+        echo mayor($c, $a) . " es el mayor de c y a";
+        echo"<br>";
+        echo mayor($d, $a) . " es el mayor de d y a";
+        echo"<br>";
+        echo"<br>";
+        echo"<hr>";
+        echo"<hr>";
         ?>
         <div id="pie">
             <div id="izq">
