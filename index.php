@@ -7,14 +7,31 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>ANP</title>
+        <link href="miCSS.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <h1><a href="formulario.xhtml">Ir a Formulario.</a></h1>
-        <h1><a href="funciones.php">Ir a Funciones.</a></h1>
-        <h1><a href="arrays.php">Ir a Arrays.</a></h1>
-        <?php
-        // put your code here
-        ?>
-    </body>
+        <h1>Ejercicios de PHP:</h1>
+    <lu>
+
+        <li><h3><a href="formulario.xhtml">Ir a Formulario.</a></h3></li>
+        <li><h3><a href="funciones.php">Ir a Funciones.</a></h3></li>
+        <li><h3><a href="EjercicioCadenas.php">Ir a Ejercicio Cadenas.</a></h3></li>
+        <li><h3><a href="arrays.php">Ir a Ejercicio Arrays.</a></h3></li>
+        <li><h3><a href="apuntes.php">Ir a Apuntes.</a></h3></li>
+       <li><h3><a href="pruebas.php">Ir a Pruebas.</a></h3></li> 
+
+    </lu>
+    <?php
+    // put your code here
+    ?>
+    <div id="pie">
+        <div id="izq">
+            <h2><img src="img/iconPHP.png" />Despliegue de Aplicaciones Web</h2>
+        </div>
+        <div id="der">
+            <h2><img src="img/iconPerson.png" />Antonio Navarro Peris</h2>
+        </div>
+    </div>
+</body>
 </html>
